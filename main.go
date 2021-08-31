@@ -2,21 +2,15 @@ package main
 
 import (
 	"fmt"
+	"pkg"
 )
 
 func main() {
-	human := struct {
-		name string
-		age int
-		id int
-	}{
-		name: "Faridun",
-		age: 19,
-		id: 1893
+	card := types.Card {
+		ID: 1425
+		Balance: 55.5
+		PAN: "5505 ****"
+		Currency: types.TJS
 	}
-	const PI = 3.14
-	const radius float64 = 55.5
-	var mainNumber int = int(radius * PI)
-	humanId := human.id
-	fmt.Printf("%+v", human)
+	const cardId = card.Id
 }

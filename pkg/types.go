@@ -11,8 +11,8 @@ const (
 )
 
 type Card struct {
-	id int
-	balance Money
-	pan PAN
-	currency Currency
+	ID int
+	Balance Money
+	PAN PAN
+	Currency Currency
 }
